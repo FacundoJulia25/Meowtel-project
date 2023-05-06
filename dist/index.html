@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tailwind and HTML static page for Meowtel">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Facundo Juliá">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/styles.css">
+    
+    <title>Meowtel</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <div class="nav">
+        <div class=" flex flex-col bg-green-secundary-dark p-4 pt-6 justify-center sm:flex-row">
+            <div class="flex pb-6 border-green-bg border-b sm:pb-0 sm:border-b-0">
+                <img class="w-11  h-11" src="../src/assets/Clock.png" alt="clock">
+                <p class="text sm:mt-2">Limited Time Promotion:</p>
+                <button class="btn50 bg-green-primary-dark mobile-numbers rounded-2xl px-2 sm:mt-0">-50%</button>
+                <h2 class="text font-light sm:mt-2">On all our website</h2>
+                <button class="text-green-primary sm:hidden"><img class="w-5" src="../src/assets/mobile_x.png"
+                        alt="x"></button>
+            </div>
+            <h2 class="mt-4 text-center mobile-numbers text-2xl sm:mt-1">04h : 02m : 55s</h2>
+        </div>
+
+        <div class="flex justify-end bg-green-primary p-2 md:hidden">
+            <img class="absolute start-5 w-28 h-28 right-5" src="../src/assets/mobile_logo.png" alt="mobile_logo">
+            <button class="text accesories mobile-numbers rounded-full m-1 py-3<">Accessories</button>
+            <button class="rounded-full bg-green-primary-dark p-3 m-1"><img src="../src/assets/mobile_contact.png"
+                    alt="profile"></button>
+            <button class="rounded-full bg-orange-strong p-3 m-1"><img src="../src/assets/mobile_Buy.png"
+                    alt="cart"></button>
+        </div>
+
+        <div class="invisible bg-green-primary p-2 md:visible">
+            <div class="container flex justify-between relative mx-auto">
+                <img class="absolute mt-2" src="../src/assets/logo.png" alt="logo">
+
+                <!------------------------ Nav - items --------------------------->
+
+                <div class="container flex justify-end">
+                    <div class="flex justify-between text accesories mobile-numbers rounded-full py-3 m-1 mx-3">
+                        <img class="absolute" src="../src/assets/head_accessories.svg.png" alt="cart_puppy">
+                        <button class="pl-16">
+                            Accessories</button>
+                    </div>
+
+                    <div
+                        class="flex justify-between text accesories bg-green-primary-dark mobile-numbers rounded-full py-3 m-1 mx-3">
+                        <button class="px-5">
+                            My account</button>
+                    </div>
+                    <div
+                        class="flex justify-between text accesories bg-orange-strong mobile-numbers rounded-full py-3 m-1 mx-3">
+                        <img class="absolute" src="../src/assets/cart_puppy.png" alt="cart_puppy">
+                        <button class="pl-10">
+                            Cart
+                        </button>
+                        <h2 class="rounded-full bg-white font-poppins text-black font-bold ml-2 px-2">0</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- body -->
+    <div class="container mt-2 mx-auto md:mt-16 p-5">
+        <!---------------- breadcrumbs  ------------------------- -->
+        <div class="hidden container md:flex breadcrumbs mx-auto mb-10 font-poppins">
+            <img class="h-5 w-5 mx-2" src="../src/assets/bx-home-alt.png" alt="vector-home">
+            <h2>Homepage</h2>
+            <img class="h-5 w-5 mx-2 mt-0.5" src="../src/assets/bx-chevrons-right.png" alt="vector-right">
+            <h2>Accesories</h2>
+            <img class="h-5 w-5 mx-2 mt-0.5" src="../src/assets/bx-chevrons-right.png" alt="vector-right">
+            <h2>Dog collar</h2>
+            <img class="h-5 w-5 mx-2 mt-0.5" src="../src/assets/bx-chevrons-right.png" alt="vector-right">
+            <h2 class="text-black font-poppins font-bold"> Cart</h2>
+        </div>
+
+        <!------------------------- Your ORDER ----------------------->
+
+        <div class="container mx-auto justify-center font-londrina ">
+            <div class=" bg-bg-primary rounded-3xl p-3 md:p-5">
+                <div class="bg-white rounded-3xl px-5 py-7">
+                    <div class="flex flex-col">
+                        <div class="flex text-2xl mx-auto md:mx-0 justify-between">
+                            <div class="flex my-auto">
+                                <img class="h-10 w-10 mx-2" src="../src/assets/tic.png" alt="okay">
+                                <h2 class="mx-2 md:mx-3">your order</h2>
+                                <h2 class="mx:3 text-orange-strong font-extrabold"> #ajhhfau</h2>
+                                <h2 class="ml-3 ">is confirmed</h2>
+                            </div>
+                            <button
+                                class="hidden md:flex relative text font-londrina py-5 px-8 text-xl bg-green-primary-dark rounded-full ml-5">
+                                See more details </button>
+                        </div>
+                        <button
+                            class="text mt-5 font-londrina p-5 text-xl bg-green-primary-dark  rounded-full md:hidden">
+                            See more details </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------------------- Ads-------------------------------------- -->
+        <div class="container mx-auto font-londrina">
+            <div class="bg-bg-primary rounded-3xl p-3 md:p-5 mx-auto mt-3">
+                <div class="bg-green-secundary-dark rounded-3xl px-5 py-7 text-center">
+                    <div class="flex flex-col md:flex-row justify-evenly">
+                        <!-- left -->
+                        <div class="md:flex flex-col">
+                            <div class="flex flex-wrap justify-between md:flex-row">
+                                <h2 class=" px-4 text-white text-2xl md:text-3xl lg:text-4xl">Exclusive Offer!</h2>
+                                <div class="rounded-xl text-2xl bg-green-primary-dark text-white p-1 px-2">-50%</div>
+                                <h2 class=" px-4 text">in all our accesories</h2>
+                            </div>
+                            <h2 class="mt-3 text-orange-strong text-4xl md:text-5xl">08mins : 23sec remaining</h2>
+                        </div>
+                        <!-- right -->
+                        <div class="flex justify-center md:justify-normal mt-5 md:mt-0 md:text-center">
+                            <img class="absolute left-auto md:hidden" src="../src/assets/mobile_Free.svg"
+                                alt="Free-shipping">
+                            <img class="hidden sm:pt-5 md:flex absolute xl:pt-0 h-30 w-30 top-auto"
+                                src="../src/assets/free logo.png" alt="Free-shipping">
+                            <div
+                                class="mt-10 md:mt-0 md:ml-12 flex  border-green-bg border-opacity-5 border-2 rounded-3xl bg-opacity-10 bg-white text-center pb-6 md:pr-5">
+                                <div class="flex flex-wrap md:flex-col pt-12 md:pt-10 md:pl-20 justify-center">
+                                    <h2 class=" text-xl text-green-primary-dark">
+                                        Add the product below
+                                    </h2>
+                                    <h2 class="text-white text-xl">
+                                        to your basket and we will send it to you at no additional cost.
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <---------------------- Products ---------------------------->
+
+                <div class="container mt-10">
+                    <div class="flex flex-col xl:flex-row justify-center">
+                        <div
+                            class="flex flex-col font-londrina border border-orange-100 bg-white rounded-xl text-center my-4 mx-3 justify-center">
+                            <div class="flex flex-col p-5 mx-auto">
+                                <img class="p-5 py-5" src="../src/assets/dogCollar.png" alt="dogCollar">
+                                <h1 class="text-xl py-3">Dog Collar</h1>
+                            </div>
+
+                            <div class="flex justify-center py-3">
+                                <div class="bg-red-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-blue-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-green-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-orange-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-yellow-600 rounded-full mx-1 p-2"></div>
+                            </div>
+                            <div class="flex justify-center p-10 ">
+                                <div
+                                    class="flex px-3 py-1bg-orange-strong bg-opacity-50 border border-orange-600 rounded-full justify-around ">
+                                    <div class="flex-col justify-center mx-2">
+                                        <h1 class="text-orange-600">£8.90</h1>
+                                        <h3 class="line-through">£17.80 </h3>
+                                    </div>
+                                    <div class=" flex ml-4 rounded-full justify-end">
+                                        <h1 class="rounded-full bg-slate-50 mt-1 p-2">-50%</h1>
+                                    </div>
+                                </div>
+                                <div
+                                    class="px-7 py-3 bg-green-primary-dark font-londrina text-xl text-white rounded-3xl mx-2 my-auto text-center">
+                                    View</div>
+                            </div>
+                        </div>
+
+                        <!---------------------  cat collar  ---------------------------->
+
+                        <div
+                            class="flex flex-col font-londrina border border-orange-100 bg-white rounded-xl text-center my-4 mx-3 justify-center">
+                            <div class="flex flex-col p-5 mx-auto">
+                                <img class="p-5 py-5" src="../src/assets/catCollar.png" alt="catCollar">
+                                <h1 class="text-xl py-3">Cat Collar</h1>
+                            </div>
+
+                            <div class="flex justify-center py-3">
+                                <div class="bg-red-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-blue-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-green-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-orange-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-yellow-600 rounded-full mx-1 p-2"></div>
+                            </div>
+                            <div class="flex justify-center p-10 ">
+                                <div
+                                    class="flex px-3 py-1bg-orange-strong bg-opacity-50 border border-orange-600 rounded-full justify-around ">
+                                    <div class="flex-col justify-center mx-2">
+                                        <h1 class="text-orange-600">£7.90</h1>
+                                        <h3 class="line-through">£15.80 </h3>
+                                    </div>
+                                    <div class=" flex ml-4 rounded-full justify-end">
+                                        <h1 class="rounded-full bg-slate-50 mt-1 p-2">-50%</h1>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="px-7 py-3 bg-green-primary-dark font-londrina text-xl text-white rounded-3xl mx-2 my-auto text-center">
+                                    View</div>
+                            </div>
+                        </div>
+
+
+                        <!---------------------  leash   ---------------------------->
+
+
+                        <div
+                            class="flex flex-col font-londrina border border-orange-100 bg-white rounded-xl text-center my-4 mx-3 justify-center">
+                            <div class="flex flex-col p-5 mx-auto">
+                                <img class="p-5 py-5" src="../src/assets/leash.png" alt="leash">
+                                <h1 class="text-xl py-3">Leash</h1>
+                            </div>
+
+                            <div class="flex justify-center py-3">
+                                <div class="bg-red-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-blue-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-green-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-orange-600 rounded-full mx-1 p-2"></div>
+                                <div class="bg-yellow-600 rounded-full mx-1 p-2"></div>
+                            </div>
+                            <div class="flex justify-center p-10 ">
+                                <div
+                                    class="flex px-3 py-1bg-orange-strong bg-opacity-50 border border-orange-600 rounded-full justify-around ">
+                                    <div class="flex-col justify-center mx-2">
+                                        <h1 class="text-orange-600">£8.90</h1>
+                                        <h3 class="line-through">£17.80 </h3>
+                                    </div>
+                                    <div class=" flex ml-4 rounded-full justify-end">
+                                        <h1 class="rounded-full bg-slate-50 mt-1 p-2">-50%</h1>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="px-7 py-3 bg-green-primary-dark font-londrina text-xl text-white rounded-3xl mx-2 my-auto text-center">
+                                    View</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------  Services --------------------->
+        <div class="container flex flex-col justify-center p-3 mt-10 lg:flex-row lg:justify-between">
+            <div class='container flex lg:flex-col rounded-3xl justify-start bg-services-bg-color p-5 my-2 mx-2'>
+                <img class="w-16 h-16 lg:w-20 lg:h-20" src="../src/assets/free shipping frame.png" alt="Free-shipping">
+                <div class="flex flex-col ml-6">
+                    <h1 class="text-green-primary-dark font-londrina border-orange-50 text-3xl mt-3 ">Free Shipping</h1>
+                    <h2 class="text-orange-strong font-poppins font-bold border-t border-orange-strong mt-3 pt-2">If you
+                        spend over £24
+                        </h1>
+                </div>
+            </div>
+            <div class='container flex lg:flex-col rounded-3xl justify-start bg-services-bg-color p-5 my-2 mx-2'>
+                <img class="w-16 h-16 lg:w-20 lg:h-20" src="../src/assets/Shipping frame.png" alt="Shipping">
+                <div class="flex flex-col ml-6">
+                    <h1 class="text-green-primary-dark font-londrina border-orange-50 text-3xl mt-3 ">Shipping</h1>
+                    <h2 class="text-orange-strong font-poppins font-bold border-t border-orange-strong mt-3 pt-2">Within
+                        24 Hours
+                        </h1>
+                </div>
+            </div>
+            <div class='container flex lg:flex-col rounded-3xl justify-start bg-services-bg-color p-5 my-2 mx-2'>
+                <img class="w-16 h-16 lg:w-20 lg:h-20" src="../src/assets/secure frame.png" alt="Secure">
+                <div class="flex flex-col ml-6">
+                    <h1 class="text-green-primary-dark font-londrina border-orange-50 text-3xl mt-3 ">Secure</h1>
+                    <h2 class="text-orange-strong font-poppins font-bold border-t border-orange-strong mt-3 pt-2">
+                        Payment
+                        </h1>
+                </div>
+            </div>
+            <div class='container flex lg:flex-col rounded-3xl justify-start bg-services-bg-color p-5 my-2 mx-2'>
+                <img class="w-16 h-16 lg:w-20 lg:h-20" src="../src/assets/vet frame.png" alt="Vet">
+                <div class="flex flex-col ml-6">
+                    <h1 class="text-green-primary-dark font-londrina border-orange-50 text-3xl mt-3 ">Vet</h1>
+                    <h2 class="text-orange-strong font-poppins font-bold border-t border-orange-strong mt-3 pt-2">
+                        Recommended
+                        </h1>
+                </div>
+            </div>
+        </div>
+        <footer class="p-3">
+            <div
+                class='container font-poppins text-sm flex flex-col lg:flex-row rounded-3xl justify-between text-center align-middle bg-services-bg-color p-5 lg:p-2  my-2 mx-2 lg:rounded-full '>
+                <img class=" mx-auto my-2 w-44 h-20 lg:my-0 lg:mx-2" src="../src/assets/logo.png" alt="logo">
+                <h2 class="mt-4 lg:mt-2 py-2 lg:py-1 xl:mt-6">Contact Us</h2>
+                <h2 class="mt-4 lg:mt-2 py-2 lg:py-1 xl:mt-6">Delivery</h2>
+                <h2 class="mt-4 lg:mt-2 py-2 lg:py-1 text-orange-strong xl:mt-6">Secure Payment</h2>
+                <h2 class="mt-4 lg:mt-2 py-2 lg:py-1 xl:mt-6">Lifetime Guaranteed Engraving</h2>
+                <h2 class="mt-4 lg:mt-2 py-2 lg:py-1 xl:mt-6">Terms of use</h2>
+                <h2 class="mt-4 lg:mt-2 py-2 lg:py-1 xl:mt-6">Returns and Refunds</h2>
+                <h2 class="mt-4 lg:mt-2 py-2 lg:py-1 xl:mt-6 xl:pr-2">Privacy Policy</h2>
+            </div>
+            <div class="container mx-auto flex justify-center">
+                <h2 class="flex mt-4 lg:mt-2 py-2 lg:py-1 font-poppins text-sm">2023 ©Dogstag.uk.co. All rights reserved</h2>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

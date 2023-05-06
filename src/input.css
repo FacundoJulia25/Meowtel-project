@@ -1,0 +1,44 @@
+ /* -------------- import fonts ----------------------  */
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400&family=Poppins:wght@400;500&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .body{
+        @apply font-poppins
+    }
+    .text{
+        @apply text-white font-poppins px-3
+    }
+    .text-black{
+
+    }
+    .mobile-text{
+        @apply text-xs
+    }
+    .mobile-numbers{
+        @apply font-londrina text-white text-xl
+    }
+}
+@layer components {
+    /* ----------------- Nav ------------------ */
+    .nav .nav-promotion{
+        @apply flex  bg-green-secundary-dark justify-center
+    }
+    .nav-button {
+        @apply bg-lime-500 rounded-xl font-extrabold text-white px-5;
+    };
+    .accesories {
+        @apply bg-nav-items-blue
+    };
+    .cart {
+        @apply bg-orange-strong top-6
+    }
+    .breadcrumbs{
+        @apply text-gray-500 text-base
+    }
+};
